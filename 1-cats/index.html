@@ -1,0 +1,68 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Week 4 - Cats!</title>
+  <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <nav>
+		<img src='images/logo.png' class='normal' />
+	</nav>
+	<h1>Pre-Course Week 4</h1>
+	<h2>Coding Challenge #1 - Cats!</h2>
+
+
+  <p style="font-size: 20px"><strong>For this problem you should use your skills in functional programming to manipulate a dataset. In the main.js file you will find an array of cats. The function catSorter should take this array, apply a number of transformations to the array, and return the transformed array of cats. The following transformations need to happen:</strong></p>
+
+  <ul>
+    <li>
+      The id should be a number, not a string.
+    </li>
+    <li>
+      Any cats that are not ready for rehoming should be removed from the list.
+    </li>
+    <li>
+      The 'readyForHome' value should be a boolean rather than a string.
+    </li>
+    <li>
+      Instead of an 'age' value, each item should instead have a 'yearOfBirth' value
+    </li>
+    <li>
+      If the name of the cat is not capitalized, please capitalize it. (N.B 'mrs fluff' should become 'Mrs Fluff')
+    </li>
+    <li>
+      Any cats that are aggressive need to be removed from the list.
+    </li>
+  </ul>
+
+  <p>
+    <strong>
+      Focus on one transformation at a time, gradually building up the complexity of your catSorter function. Methods such as map, filter and reduce will be vital here. The underscore library is available to use in this project if you want to use it, or you may choose to stick with the native functional methods.
+    </strong>
+  </p>
+
+  <p>
+    If you want to practice using underscore methods, use <a href='http://codepen.io/'>Codepen.io</a> and add the underscore library to your pen so that you can use its functionality:
+  </p>
+  <img src='images/codepen.png' class='wide' />
+
+	<p>Use the below tests to guide you. If all the tests are passing, your implementation works correctly.</p>
+
+
+  <div id="mocha"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="https://cdn.rawgit.com/jquery/jquery/2.1.4/dist/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/Automattic/expect.js/0.3.1/index.js"></script>
+  <script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+
+  <script>mocha.setup('bdd')</script>
+  <script src='main.js'></script>
+  <script src='spec/main.spec.js'></script>
+  <script>
+    mocha.checkLeaks();
+    mocha.globals(['jQuery']);
+    mocha.run();
+  </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Week 4 - Underscore Methods</title>
+  <link href="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.css" rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+  <nav>
+		<img src='images/logo.png' />
+	</nav>
+	<h1>Pre-Course Week 4</h1>
+	<h2>Coding Challenge #2 - Underscore Methods</h2>
+
+
+  <p style="font-size: 20px"><strong>For this challenge you'll be implementing your own version of some of Underscore's methods. <a href="http://underscorejs.org/#">Underscore</a> is a JavaScript library with a lot of really useful utility functions to work mainly with objects and arrays. You should implement:</strong></p>
+
+  <ul>
+    <li><a href="http://underscorejs.org/#first">first</a></li>
+    <li><a href="http://underscorejs.org/#rest">rest</a></li>
+    <li><a href="http://underscorejs.org/#contains">contains</a></li>
+    <li><a href="http://underscorejs.org/#compact">compact</a></li>
+  </ul>
+
+  <p>We recommend spending some time getting familiar with what the different methods do. Read the documentation (linked above) and play with the examples in the console or write your own. We've included the actual Underscore in this project, you can access it through the "_" object both in the console and "main.js". It goes without saying that you should not use any Underscore method in your solution.</p>
+
+	<p>Use the below tests to guide you. If all the tests are passing, your implementation works correctly.</p>
+
+  <div id="mocha"></div>
+
+  <script src="https://cdn.rawgit.com/jquery/jquery/2.1.4/dist/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/Automattic/expect.js/0.3.1/index.js"></script>
+  <script src="https://cdn.rawgit.com/mochajs/mocha/2.2.5/mocha.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+  <script>mocha.setup('bdd')</script>
+  <script src='main.js'></script>
+  <script src='spec/main.spec.js'></script>
+  <script>
+    mocha.checkLeaks();
+    mocha.globals(['jQuery']);
+    mocha.run();
+  </script>
+</body>
+</html>
