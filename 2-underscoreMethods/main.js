@@ -52,4 +52,11 @@ var answer;
 
 function compact (array) {
 
+	var final = array.filter(function(val){
+		if(val !== undefined && val !== null && val !== '' && val !== 0 && val !== false){
+			return val;
+		}
+	});
+
+	return final
 }
